@@ -22,9 +22,9 @@ The output is a detailed report covering all aspects of the analysis, printed to
 
 ## Installation
 
-1. **Clone the Repository** (if applicable):
+1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/raphaelvarszegi/AI-HEDGE-FUND.git
    cd ai-hedge-fund-analysis
    ```
 
@@ -52,7 +52,7 @@ The output is a detailed report covering all aspects of the analysis, printed to
 1. **Run the Script**:
    Modify the ticker symbol in the `main()` function (e.g., `"TSLA"`) or pass a custom ticker to `run_ai_hedge_fund()`. Then execute:
    ```bash
-   python script.py
+   uv run main.py
    ```
 
 2. **Example Output**:
@@ -105,11 +105,6 @@ dependencies = [
 ]
 ```
 
-Install them with:
-```bash
-uv sync
-```
-
 ## Limitations
 
 - Requires a valid Perplexity API key with sufficient quota.
@@ -131,24 +126,3 @@ This project is unlicensed and provided as-is for educational purposes. Use at y
 
 - Built with [LangChain](https://github.com/langchain-ai/langchain) and [Perplexity](https://www.perplexity.ai).
 - Inspired by AI-driven financial analysis concepts.
-
----
-
-### Corresponding `pyproject.toml`
-Here’s the updated `pyproject.toml` without `httpx` and `ruff>=0.3.0`:
-
-```toml
-[project]
-name = "ai-hedge-fund-analysis"
-version = "0.1.0"
-dependencies = [
-    "langchain==0.3.19",
-    "langchain-community==0.3.18",
-    "langchain-core==0.3.44",
-    "python-dotenv"
-]
-
-[tool.uv]
-# Optional: Specify Python version compatibility
-python = ">=3.8"
-```

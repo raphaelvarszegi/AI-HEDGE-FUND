@@ -16,8 +16,8 @@ The output is a detailed report covering all aspects of the analysis, printed to
 
 ## Prerequisites
 
-- Python 3.8 or higher
-- [uv](https://github.com/astral-sh/uv) installed (e.g., via `pip install uv` or your package manager)
+- Python 3.9 or higher
+- [uv](https://github.com/astral-sh/uv) installed (e.g., curl -LsSf https://astral.sh/uv/install.sh | sh)
 - A Perplexity API key (sign up at [Perplexity.ai](https://www.perplexity.ai) to obtain one)
 
 ## Installation
